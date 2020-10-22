@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Olá</title>
+    <script>
+        function hellojs() {
+            document.querySelector('h1').innerHTML = 'JavaScript';
+        }
+        function azul() {
+            document.querySelector('h1').style.color = "blue";
+        }
+        function carregar() {
+            document.querySelector('button').addEventListener('click', hellojs);
+            document.querySelector("button").addEventListener('click', azul);
+        }
+        document.addEventListener("DOMContentLoaded", carregar);
+    </script>
+</head>
+
+<body>
+    <h1>Olá mundo!</h1>
+    <button>Hello JS</button>
+</body>
+
+</html>

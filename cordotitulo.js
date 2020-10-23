@@ -8,20 +8,21 @@ function criarBotao(texto, cor) {
     botao.innerHTML = texto;
     botao.addEventListener("click", function () {
         mudarCorDoTitulo(cor);
-    })
+    });
     return botao;
 }
 
 const cores = [
     ["azul", "blue"],
     ["verde", "green"],
-    ["vermelho", "red"]
+    ["vermelho", "blue"],
+    ["amarelo", "yellow"]
 ];
 
 function inserirBotoesComJS() {
     div = document.createElement("div");
     div.style.backgroundColor = "yellow";
-    cores.forEach(item => {
+    cores.forEach(function (item) {
         const [texto, cor] = item;
         botao = criarBotao(texto, cor);
         div.appendChild(botao);

@@ -15,7 +15,7 @@ function criarBotao(texto, cor) {
 const cores = [
     ["azul", "blue"],
     ["verde", "green"],
-    ["vermelho", "blue"],
+    ["vermelho", "red"],
     ["amarelo", "yellow"]
 ];
 
